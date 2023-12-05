@@ -1,0 +1,11 @@
+[Unit]
+Description=Netram service
+After=multi-user.target
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=netram
+
+[Install]
+WantedBy=multi-user.target
